@@ -66,12 +66,12 @@
             <objects>
                 <viewController id="JiN-kJ-hJF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SpY-bH-qVE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99321061369999997" green="0.36192989349999999" blue="0.46464425329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wwi-G0-GJn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="確認" id="BFJ-fH-MeM"/>
+                    <tabBarItem key="tabBarItem" title="確認" image="tab_heart" id="BFJ-fH-MeM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pO8-yE-ONu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,14 +80,16 @@
         <!--ホーム-->
         <scene sceneID="nYD-6f-dJt">
             <objects>
-                <viewController id="gjH-Xu-oYA" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="gjH-Xu-oYA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ghJ-v2-niB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="dMW-CQ-mKC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" image="tab_home" id="RFl-w4-Va1"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="tab_home" id="RFl-w4-Va1">
+                        <color key="badgeColor" red="0.99321061369999997" green="0.36192989349999999" blue="0.46464425329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1s1-vd-A7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,11 +98,12 @@
         <!--Tab Bar Controller-->
         <scene sceneID="GP6-mG-BQl">
             <objects>
-                <tabBarController storyboardIdentifier="home" id="q1i-dA-HvO" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I1M-tB-0l0">
+                <tabBarController storyboardIdentifier="home" modalPresentationStyle="fullScreen" id="q1i-dA-HvO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="I1M-tB-0l0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="gjH-Xu-oYA" kind="relationship" relationship="viewControllers" id="F8i-6B-39r"/>
@@ -116,6 +119,7 @@
         <image name="start_icon" width="286" height="286"/>
         <image name="start_login_button" width="166" height="45"/>
         <image name="start_start_button" width="310" height="58"/>
+        <image name="tab_heart" width="22" height="18"/>
         <image name="tab_home" width="25" height="25"/>
     </resources>
     <color key="tintColor" red="1" green="0.36078431372549019" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

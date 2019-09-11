@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B660597B232902CE002054F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B6A86AEE2328FBAE00BAC25C /* AIDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A86AF12328FBAE00BAC25C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A86AF32328FBAE00BAC25C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B6A86AF62328FBAE00BAC25C /* Base */,
+				B660597B232902CE002054F7 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
