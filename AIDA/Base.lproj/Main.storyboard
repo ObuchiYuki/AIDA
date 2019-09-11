@@ -61,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="139" y="121"/>
         </scene>
-        <!--Item 2-->
+        <!--確認-->
         <scene sceneID="34U-5c-8vp">
             <objects>
                 <viewController id="JiN-kJ-hJF" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wwi-G0-GJn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="BFJ-fH-MeM"/>
+                    <tabBarItem key="tabBarItem" title="確認" id="BFJ-fH-MeM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pO8-yE-ONu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +116,7 @@
         <image name="start_icon" width="286" height="286"/>
         <image name="start_login_button" width="166" height="45"/>
         <image name="start_start_button" width="310" height="58"/>
-        <image name="tab_home" width="62" height="62"/>
+        <image name="tab_home" width="25" height="25"/>
     </resources>
     <color key="tintColor" red="1" green="0.36078431372549019" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
