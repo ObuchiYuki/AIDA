@@ -140,35 +140,24 @@
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="10000" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="8Af-67-DA9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="99" id="8Af-67-DA9">
                                         <rect key="frame" x="0.0" y="173" width="414" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Af-67-DA9" id="9Ea-Wq-WJ6">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-mM-jwe">
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-mM-jwe" customClass="CardView" customModule="AIDA" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="22" width="374" height="54"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
-                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                                            <integer key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                            <real key="value" value="0.5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="top" secondItem="9Ea-Wq-WJ6" secondAttribute="topMargin" constant="11" id="PNI-SK-I9H"/>
-                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="centerY" secondItem="9Ea-Wq-WJ6" secondAttribute="centerY" id="XLY-by-Hz9"/>
-                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="leading" secondItem="9Ea-Wq-WJ6" secondAttribute="leadingMargin" id="csr-Ot-d2h"/>
-                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="trailing" secondItem="9Ea-Wq-WJ6" secondAttribute="trailingMargin" id="vnw-fb-aIi"/>
+                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="leading" secondItem="9Ea-Wq-WJ6" secondAttribute="leadingMargin" id="G77-4I-zfI"/>
+                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="centerY" secondItem="9Ea-Wq-WJ6" secondAttribute="centerY" id="RSm-7u-nui"/>
+                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="trailing" secondItem="9Ea-Wq-WJ6" secondAttribute="trailingMargin" id="ivy-R3-BWk"/>
+                                                <constraint firstItem="VXz-mM-jwe" firstAttribute="top" secondItem="9Ea-Wq-WJ6" secondAttribute="topMargin" constant="11" id="zcC-qw-XB8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
