@@ -147,9 +147,59 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-mM-jwe" customClass="CardView" customModule="AIDA" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="22" width="374" height="54"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-mM-jwe" customClass="CardView" customModule="AIDA" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="22" width="374" height="55"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Tu0-s4-SyE">
+                                                            <rect key="frame" x="12" y="7.5" width="200" height="40"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mF3-hs-1DH">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="RHT-V8-6JA"/>
+                                                                        <constraint firstAttribute="width" constant="40" id="W2h-d0-RrP"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6uq-de-fya">
+                                                                    <rect key="frame" x="56" y="0.0" width="144" height="40"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMW-zb-qQJ">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="144" height="19"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="144" id="Zuh-qh-CT1"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNP-Px-jkI">
+                                                                            <rect key="frame" x="0.0" y="23" width="144" height="17"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="17" id="AWK-Xv-K63"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="disclosure_indicator" translatesAutoresizingMaskIntoConstraints="NO" id="z0v-es-cUS">
+                                                            <rect key="frame" x="354" y="17" width="8" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="8" id="0FV-I0-gsx"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="z0v-es-cUS" firstAttribute="centerY" secondItem="Tu0-s4-SyE" secondAttribute="centerY" id="Alb-Nv-5US"/>
+                                                        <constraint firstItem="z0v-es-cUS" firstAttribute="top" secondItem="VXz-mM-jwe" secondAttribute="top" constant="17" id="EOD-u7-s9E"/>
+                                                        <constraint firstAttribute="trailing" secondItem="z0v-es-cUS" secondAttribute="trailing" constant="12" id="Ohh-pq-aHj"/>
+                                                        <constraint firstItem="Tu0-s4-SyE" firstAttribute="leading" secondItem="VXz-mM-jwe" secondAttribute="leading" constant="12" id="h5Q-5i-BxX"/>
+                                                        <constraint firstItem="Tu0-s4-SyE" firstAttribute="centerY" secondItem="VXz-mM-jwe" secondAttribute="centerY" id="ir8-eZ-Zuf"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,6 +279,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="disclosure_indicator" width="8" height="20"/>
         <image name="home_header" width="375" height="93"/>
         <image name="start_icon" width="286" height="286"/>
         <image name="start_login_button" width="166" height="45"/>

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class CardView: UIView {
     override func setNeedsDisplay() {
         self.layer.cornerRadius = 4

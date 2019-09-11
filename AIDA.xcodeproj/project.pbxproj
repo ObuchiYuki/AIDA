@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		B660597B232902CE002054F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B660597C23290D69002054F7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B660597E23291037002054F7 /* AIDA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIDA.entitlements; sourceTree = "<group>"; };
 		B6A86AEE2328FBAE00BAC25C /* AIDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A86AF12328FBAE00BAC25C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A86AF32328FBAE00BAC25C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		B6A86AF02328FBAE00BAC25C /* AIDA */ = {
 			isa = PBXGroup;
 			children = (
+				B660597E23291037002054F7 /* AIDA.entitlements */,
 				B6A86AF12328FBAE00BAC25C /* AppDelegate.swift */,
 				B6A86AF32328FBAE00BAC25C /* ViewController.swift */,
 				B6A86AF52328FBAE00BAC25C /* Main.storyboard */,
@@ -288,7 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AIDA/AIDA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 4NN4TCPLE3;
 				INFOPLIST_FILE = AIDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -297,6 +301,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuki2.AIDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,7 +311,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AIDA/AIDA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 4NN4TCPLE3;
 				INFOPLIST_FILE = AIDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuki2.AIDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
